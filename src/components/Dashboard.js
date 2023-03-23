@@ -44,9 +44,8 @@ class Dashboard extends Component {
       let {infos} = this.props.info
       let {educations} = this.props.education
       let {works} = this.props.work
-      let {projects, loading} = this.props.project
+      let {projects} = this.props.project
       let {skills} = this.props.skill
-      console.log(projects)
      // let {tasks} = this.props.task
       
       
@@ -54,8 +53,6 @@ class Dashboard extends Component {
 
 
   return (
-
-    loading ? <Spinner/> : (
  
 <div className={styles.body}>
 <div className = {styles.dashbody}>
@@ -115,7 +112,6 @@ class Dashboard extends Component {
   </div>
 </div>
 </div>
-     ) 
         )
     }
 }
