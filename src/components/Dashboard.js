@@ -14,7 +14,8 @@ import {getProjects, getProjectsJson} from "../actions/ProjectActions"
 import {getSkills} from "../actions/SkillAction"
 import SkillItem from './Skill/SkillItem';
 import Spinner from "./Spinner/Spinner";
-
+import Bubble from './Bubble/Bubble';
+import navStyle from './Layout/Header.module.css'
 
 
 
@@ -48,9 +49,10 @@ class Dashboard extends Component {
       let {skills} = this.props.skill
      // let {tasks} = this.props.task
       
-      
-  
-
+    const scrollToPage = (pageId) => {
+      const page = document.getElementById(pageId);
+      page.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
  
@@ -58,16 +60,20 @@ class Dashboard extends Component {
 <div className = {styles.dashbody}>
   <div className={styles.main}>
   
-  
-    <div className={styles.info}>
+      <div className={navStyle.navItem}>
+        <li className={styles.button} onClick={() => scrollToPage('work')}>Work</li>
+        <li className={styles.button} onClick={() => scrollToPage('project')}>project</li>
+        <li className={styles.button} onClick={() => scrollToPage('education')}>education</li>
+        <li className={styles.button} onClick={() => scrollToPage('skill')}>skill</li>
+      </div>
+    <div className={styles.info} id="home">
       {infos.map(info => (
         <InfoItem key={info.id} info = {info}/>
       ))}
       </div>
-   
     <div className={styles.work_cover}><h4>Work Experience</h4>
  
-<div className={styles.work} > 
+<div className={styles.work} id="work" > 
   {works.map(work => <WorkItem key={work.id} work ={work}/>)}
   </div>
   <div className={styles.infoWave}>
@@ -78,7 +84,7 @@ class Dashboard extends Component {
   </div>
 
   <div>
-  <div className={styles.task_cover}><h4>Project Undertaken</h4>
+  <div className={styles.task_cover} id="project"><h4>Project Undertaken</h4>
   <div className={styles.task}>
     {projects.map(project => <ProjectItem key = {project.id} project ={project} /> )}
   </div>
@@ -92,24 +98,24 @@ class Dashboard extends Component {
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className={styles.shape_fillBottom}></path>
     </svg>
 </div>
-<div className={styles.education_inner}>
+<div className={styles.education_inner} id="education">
 
     <h4>Education / Certification</h4>
   <div className={styles.education}>
   {educations.map(education =>  <EducationItem key={education.id} education = {education}/>)}
   </div>
   </div>
-    
 </div>
  
   <div>
-  <div className={styles.skill_cover}><h4>Skills</h4>
-  <div className={styles.skill}>{skills.map(skill => <SkillItem key={skill.id} skill={skill} />)}
-   
+    
+  <div className={styles.skill_cover} id="skill"><h4>Skills</h4>
+  <div className={styles.skillBubble}><Bubble /></div>
+ <div className={styles.skill}>{skills.map(skill => <SkillItem key={skill.id} skill={skill} />)}
+  </div> 
   </div>
   </div>
-  </div>
-  </div>
+</div>
 </div>
 </div>
         )

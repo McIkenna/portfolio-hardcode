@@ -42,7 +42,6 @@ class ProjectItem extends Component {
 			<img src={image} alt="car"/>
 			</div>
 				<div className={classes.rightSide} >
-			   
 				  <div className={classes.title}>
 				  <h1 className={classes.label}>{project.projectTitle}</h1>
 					<h5>{project.keyRole}</h5>

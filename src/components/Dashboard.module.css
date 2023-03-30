@@ -3,6 +3,16 @@
   box-sizing: border-box;
 }
 
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .body {
   margin: 0;
   padding: 0;
@@ -48,10 +58,9 @@
 }
 
 .skill_cover {
-  background-color: #5AB9EA;
+  background-color: #0b222d;
   align-items: center;
   text-align: center;
-  padding: 5% 10%;
 }
 
 .skill_cover h4 {
@@ -63,7 +72,7 @@
 }
 
 .skill {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(5, 1fr);
   padding: 5% 0;
  
@@ -171,8 +180,13 @@
  
   }
 
+  .skillBubble{
+    display: flex;
+  }
+
   .skill {
    
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 5%;
   
@@ -193,12 +207,20 @@
   .main h4 {
     font-size: 2rem;
   }
+  .skill_cover {
+    background-color: #98b6c5;
+    padding: 10% 20%;
+  }
   .skill {
    
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 0 2%;
   
 
+  }
+  .skillBubble {
+    display: none;
   }
 }
 
@@ -212,5 +234,8 @@
    
   
 
+  }
+  .skillBubble{
+    display: none;
   }
 }

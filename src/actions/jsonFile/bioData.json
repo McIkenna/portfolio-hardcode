@@ -176,7 +176,7 @@
     {
         "id":"4",
         "skillName": "CSS",
-        "subName": "Boostrap, Material UI, Materialize, TailWind CSS, LESS",
+        "subName": "Boostrap, Material UI, Materialize CSS, TailWind CSS, Chakra UI",
         "proficiency": "Expert",
         "rating": "8/10"
 
