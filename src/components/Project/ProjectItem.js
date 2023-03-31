@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import {deleteProject} from "../../actions/ProjectActions"
 import {connect} from "react-redux"
 import PropTypes from "prop-types"
-
 class ProjectItem extends Component {
 	onDeleteClick = id => {
 		this.props.deleteProject(id)
@@ -15,6 +14,7 @@ class ProjectItem extends Component {
 		let {project} = this.props;
 		//const image = `data:image/jpg;base64,${project.image}`
 		//const image = project.image;
+		console.log(project.image)
 		let {validToken, user} = this.props.security;
 		
 		const userIsAuthenticated = (
@@ -39,7 +39,7 @@ class ProjectItem extends Component {
 			<div className={classes.content}>
 				<div className={classes.card}>
 				<div className={classes.leftSide} >
-			<img src={`${project.image}`} alt="car"/>
+			<img src={`${project.image}`} alt={project.projectTitle}/>
 			</div>
 				<div className={classes.rightSide} >
 				  <div className={classes.title}>
@@ -55,7 +55,7 @@ class ProjectItem extends Component {
 					</div>
 				   
 					<small>{(project.progressRate).toFixed(2)} % Completion</small>
-				   <a href={project.link} target="blank" ><button className={project.link ? classes.btn : {display: "none"}} >View</button></a>
+				   <button href={project.link} target="blank" className={project.link ? classes.button : classes.button_disabled} >{project.link ? " View": ""}</button>
 				  </div>
 				  
 				</div>

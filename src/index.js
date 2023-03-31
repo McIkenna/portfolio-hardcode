@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import registerServiceWorker from './registerServiceWorker';
 import {Helmet} from "react-helmet";
-import {image} from "./actions/jsonFile/images/favicon.ico"
+import {image} from "./actions/imageData/favicon.ico"
 
 const app = (
   <BrowserRouter>

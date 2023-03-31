@@ -105,7 +105,7 @@ input[type="submit"]:hover {
 .Infocover {
   margin: 0;
   padding: 0;
-  background-image: url("../../../public/images/whiteBack.jpg");
+  background-image: url("../../actions/imageData/whiteBack.jpg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -224,7 +224,7 @@ input[type="submit"]:hover {
   height: 50vh;
   min-height: 500px;
   width: 100%;
-  background-image: url("../../../public/images/car-scene1.gif");
+  background-image: url("../../actions/imageData/car-scene1.gif");
   background-repeat: no-repeat;
   padding: 5% 20%;
 }
@@ -340,7 +340,7 @@ input[type="submit"]:hover {
   }
 
   .Infocover {
-    background-image: url("../../../public/images/whiteBack2.png");
+    background-image: url("../../actions/imageData/whiteBack2.png");
     width: 100%;
   }
   .textcontainer p:nth-child(2) {

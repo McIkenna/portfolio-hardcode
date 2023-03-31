@@ -5,9 +5,9 @@ import PropTypes from "prop-types"
 import {connect} from "react-redux"
 import {deleteInfo} from "../../actions/InfoActions"
 import {Spring} from "react-spring/renderprops"
-import resume from "../../../"
-import github from "../../../public/images/github.png"
-import linkedin from "../../../public/images/linkedin.png";
+import resume from "../../actions/imageData/Ikenna Ifekaonwu - ProfilePDF.pdf"
+import github from "../../actions/imageData/github.png"
+import linkedin from "../../actions/imageData/linkedin.png";
 
 
  class InfoItem extends Component {

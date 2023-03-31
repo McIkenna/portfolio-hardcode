@@ -6,7 +6,7 @@ import CreateEduButton from '../Education/CreateEduButton';
 import CreateWorkButton from '../Work/CreateWorkButton';
 import CreateProjectButton from '../Project/CreateProjectButton';
 import CreateSkillButton from '../Skill/CreateSkillButton';
-import logo from "../../../public/images/Ikenna2.png"
+import logo from "../../actions/imageData/Ikenna2.png"
 import LoginButton from "../Contact/LoginButton"
 import PropTypes from "prop-types"
 import {connect} from "react-redux";
