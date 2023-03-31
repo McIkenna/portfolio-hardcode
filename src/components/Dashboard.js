@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react'
+import React, { Component } from 'react'
 import styles from "./Dashboard.module.css"
 
 import {connect} from "react-redux";
@@ -13,7 +13,6 @@ import ProjectItem from './Project/ProjectItem'
 import {getProjects, getProjectsJson} from "../actions/ProjectActions"
 import {getSkills} from "../actions/SkillAction"
 import SkillItem from './Skill/SkillItem';
-import Spinner from "./Spinner/Spinner";
 import Bubble from './Bubble/Bubble';
 import navStyle from './Layout/Header.module.css'
 

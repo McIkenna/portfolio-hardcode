@@ -5,9 +5,9 @@ import PropTypes from "prop-types"
 import {connect} from "react-redux"
 import {deleteInfo} from "../../actions/InfoActions"
 import {Spring} from "react-spring/renderprops"
-import resume from "../../actions/jsonFile/images/Ikenna Ifekaonwu - ProfilePDF.pdf"
-import github from "../../actions/jsonFile/images/github.png"
-import linkedin from "../../actions/jsonFile/images/linkedin.png";
+import resume from "../../../"
+import github from "../../../public/images/github.png"
+import linkedin from "../../../public/images/linkedin.png";
 
 
  class InfoItem extends Component {
@@ -83,7 +83,7 @@ import linkedin from "../../actions/jsonFile/images/linkedin.png";
             </div>
             <div className={classes.socials}>
               
-            <a href="https://github.com/McIkenna" target="_blank">
+            <a href="https://github.com/McIkenna" target="blank">
                 <img src={github} alt="github" className={classes.github}/>
            </a>
            < a href="https://www.linkedin.com/in/ikenna-ifekaonwu/" target="blank"  >

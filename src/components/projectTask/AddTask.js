@@ -1,9 +1,5 @@
-import React, { Component, useState } from 'react'
-import {useDispatch, useSelector} from "react-redux"
+import React, { Component } from 'react'
 import styles from "./task.module.css"
-import {uploadTask} from "../../actions/ProjectActions"
-import {connect} from "react-redux"
-import PropTypes from "prop-types"
 import axios from "axios"
 
 class AddTask extends Component {

@@ -49,18 +49,6 @@ if(jwtToken){
 
 function App() {
 
-  const centeredStyles = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    flexDirection: "column",
-    height: "100%",
-  };
-  const h2Styles = {
-    fontSize: "82px",
-  };
- 
-
   return (
     <Provider store={store}>
     <Router>

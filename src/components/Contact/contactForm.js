@@ -25,7 +25,6 @@ class contactForm extends Component {
 
     validate =() => {
         let nameError = "";
-        let emailError = "";
 
         
         if(!this.state.name){

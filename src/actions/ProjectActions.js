@@ -1,5 +1,5 @@
 import axios from "axios"
-import { DELETE_PROJECT, GET_ERRORS, GET_PROJECT, GET_PROJECTS, UPLOAD_TASK, GET_TASKS, GET_PROJECTS_JSON} from "./types";
+import { DELETE_PROJECT, GET_ERRORS, GET_PROJECT, GET_PROJECTS, GET_PROJECTS_JSON} from "./types";
 import bioData from './jsonFile/bioData.json'
 
 export const createProject = (project, history) => async dispatch => {

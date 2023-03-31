@@ -14,7 +14,7 @@ class ProjectItem extends Component {
 		
 		let {project} = this.props;
 		//const image = `data:image/jpg;base64,${project.image}`
-		const image = project.image;
+		//const image = project.image;
 		let {validToken, user} = this.props.security;
 		
 		const userIsAuthenticated = (
@@ -39,7 +39,7 @@ class ProjectItem extends Component {
 			<div className={classes.content}>
 				<div className={classes.card}>
 				<div className={classes.leftSide} >
-			<img src={image} alt="car"/>
+			<img src={`${project.image}`} alt="car"/>
 			</div>
 				<div className={classes.rightSide} >
 				  <div className={classes.title}>
@@ -49,13 +49,13 @@ class ProjectItem extends Component {
 				  </div>
 				  <div className={classes.box}>
 					<div
-					className={project.progressRate == 100 ? classes.completedBar : project.progressRate >= 75 ? classes.inProgressBar : project.progressRate == 50 ? classes.startedBar: classes.NoBar}
+					className={project.progressRate === 100 ? classes.completedBar : project.progressRate >= 75 ? classes.inProgressBar : project.progressRate === 50 ? classes.startedBar: classes.NoBar}
 				   >
 					  <div className={classes.bar}></div>
 					</div>
 				   
 					<small>{(project.progressRate).toFixed(2)} % Completion</small>
-				   {/*<a href={project.link} target="blank" ><button className={classes.btn} disabled>View</button></a> */}
+				   <a href={project.link} target="blank" ><button className={project.link ? classes.btn : {display: "none"}} >View</button></a>
 				  </div>
 				  
 				</div>

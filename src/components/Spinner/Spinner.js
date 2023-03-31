@@ -1,4 +1,3 @@
-import {connect} from 'react-redux';
 import classes from './Spinner.module.css';
 
 import React, { Component } from 'react'

@@ -47,7 +47,17 @@
     "projectTitle": "Cybertrain",
     "keyRole": "Web Developer",
     "projectSummary": "Cyber security online learning platform which utilizes external APIs from social media platforms to enhance the platform's functionality and an in-built video storage database to train students on cyber crime awareness. The platform aimed to increase students' awareness and understanding of cyber threats and how to protect themselves from them.",
-    "progressRate": 100
+    "progressRate": 100,
+    "link": "https://cybertrain.netlify.app/"
+},
+{
+    "id": "6",
+    "image": "./images/mercyportfolio.png",
+    "projectTitle": "Portfolio Dashboard",
+    "keyRole": "Web Developer",
+    "projectSummary": "Created responsive dashboard for professional bodies and individuals",
+    "progressRate": 100,
+    "link": "https://mercy-okonna.netlify.app/"
 }
 ],
 "info": [{
